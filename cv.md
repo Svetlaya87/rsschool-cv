@@ -79,7 +79,7 @@ Introduction to testing and analysis of software requirements. Methods and types
 
 
 
-#### Language
+### Language
 
 English - B2 (Upper-Intermediate)
 according to English test on the <https://training.epam.ua> platform.
