@@ -1,25 +1,25 @@
 
-### Vorobiova Svitlana
+## Vorobiova Svitlana
 ---
 
-#### Contacts
+### Contacts
 * Mobile: +3 8067 853 32 59
 * E-mail: svetlaya87@gmail.com
 * Discord: Svetlana (@Svetlaya87)
 
 
-#### About me
+### About me
 
 My goal  is to learn  something new in this course. May be I will able to get a job (dreamy). Why I chose programming because it's interesting and it keeps the mind in a good shape. Programming also changes thinking in everyday life, because some processes or repetitive actions in my life I'm  trying to simplify or improve.
 
 
-#### Skills
+### Skills
 * HTML&CSS
 * JS
 * GIT
 
 
-#### Code example
+### Code example
 
 Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 
@@ -36,14 +36,14 @@ function even_or_odd(number) {
 ~~~
 
 
-#### My educational works
+### My educational works
 
 <https://svetlaya87.github.io/personal-page/my-works.html>
 
 
 
 
-#### Education
+### Education
 
 Dnipro, NMetAU.
 
@@ -53,7 +53,7 @@ Specialist, Accounting and audit.
 
 
 
-#### Courses
+### Courses
 
 
 **JavaScript, Frontend programming**
