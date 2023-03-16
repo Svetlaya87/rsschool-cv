@@ -20,7 +20,7 @@ My goal  is to learn  something new in this course. May be I will able to get a 
 
 Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
 
-https://www.codewars.com/kata/53da3dbb4a5168369a0000fe
+<https://www.codewars.com/kata/53da3dbb4a5168369a0000fe>
 
 ~~~
 function even_or_odd(number) {
@@ -33,7 +33,7 @@ function even_or_odd(number) {
 ~~~
 #### My educational works
 
-https://svetlaya87.github.io/personal-page/my-works.html
+<https://svetlaya87.github.io/personal-page/my-works.html>
 
 #### Education
 
@@ -58,7 +58,7 @@ Page layout (HTML 5.2 & CSS 3). Mastering CSS Grid technology, adaptive layout, 
 
 Introduction to testing and analysis of software requirements. Methods and types of testing. Test documentation. Automation of testing.
 
-####Language
+#### Language
 
 English - B2 (Upper-Intermediate)
-according to English test on the  training.epam.ua platform.
+according to English test on the  <training.epam.ua> platform.
