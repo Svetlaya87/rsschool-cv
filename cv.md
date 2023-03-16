@@ -11,7 +11,7 @@
 
 My goal  is to learn  something new in this course. May be I will able to get a job (dreamy). Why I chose programming because it's interesting and it keeps the mind in a good shape. Programming also changes thinking in everyday life, because some processes or repetitive actions in my life I'm  trying to simplify or improve.
 
-####Skills
+#### Skills
 * HTML&CSS
 * JS
 * GIT
