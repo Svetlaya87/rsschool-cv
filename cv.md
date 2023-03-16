@@ -41,12 +41,16 @@ function even_or_odd(number) {
 <https://svetlaya87.github.io/personal-page/my-works.html>
 
 
+
+
 #### Education
 
 Dnipro, NMetAU.
 
 2009 July - September 2004
 Specialist, Accounting and audit.
+
+
 
 
 #### Courses
@@ -71,6 +75,8 @@ Page layout (HTML 5.2 & CSS 3). Mastering CSS Grid technology, adaptive layout, 
 2021 January - 2020 November | ORT Dnipro
 
 Introduction to testing and analysis of software requirements. Methods and types of testing. Test documentation. Automation of testing.
+
+
 
 
 #### Language
