@@ -1,0 +1,205 @@
+$main-text-color: #272121;
+$secondary-color: #c4c4c4;
+$coding-color: #fdc254;
+$li-font-size: 1.5rem;
+$subtitle--font-size: 1.2rem;
+$contact-icons--height: 1.5rem;
+$ul__li--hover: #da5903;
+$article__title: #e98644;
+$font-family--secondary: 'Cascadia Code', sans-serif;
+                                                
+
+%list--flex {
+    display: flex;
+    gap: 10px;
+}
+
+@mixin ul__li--hover-color($property1, $property2, $color) {
+    #{$property1}: $color;
+    #{$property2}: $property1 0.4s linear;
+}
+
+
+
+body,
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin: 0;
+    color: $main-text-color;
+    font-family:  "Arial", sans-serif;
+}
+
+a {
+    color: $main-text-color;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none; /* Прибираємо маркери */
+}
+
+ul {
+    margin-left: 0; /* Відступ зліва в браузері IE і Opera */
+    padding-left: 0; /* Відступ зліва в браузері Firefox, Safari, Chrome */
+}
+
+.container-sv{
+    padding: 8px;
+    padding-top: 0px;
+    
+    /*гид не управляет самим контейнером, а только к тем элементам , котоыре внутри. т.е паддинги для краев мы задаем самостоятельно. Также , чтобы прижать футер к подвалу пишем минимальную  высоту*/
+    display: grid;
+    row-gap: 40px;
+    column-gap: 40px;
+    
+    grid-template-columns:  300px 1fr;
+    grid-template-rows: 300px auto 100px;
+    
+   
+    grid-template-areas: "header header"
+                         "aside main"
+                         "footer footer"
+                         ;
+}
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area:  aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.header {
+    
+    display: flex;
+}
+
+.section__description {
+    font-size: $li-font-size;
+}
+
+.article__title {
+    font-weight: 600;
+    border-bottom: 1px solid $article__title;
+    align-self: center;
+}
+
+.section__title {
+    font-weight: 600;
+}
+
+.section__subtitle {
+    font-size: $subtitle--font-size;
+
+}
+
+.contact-items {
+    height: $contact-icons--height;
+    align-self: center;
+
+    @include ul__li--hover-color( fill, transition, $main-text-color );
+
+}
+
+.img {
+    max-width: 50%;
+} 
+
+.logo {
+    max-width: 7%;
+}
+
+.ul__item,
+.ul__wrapper,
+.skills__block,
+.nav__block,
+.footer,
+.section {
+    @extend %list--flex;
+
+}
+
+.ul__wrapper,
+.section {
+    padding-top: 20px;
+    flex-direction: column;
+}
+
+.ul__text {
+
+    font-size: $li-font-size;
+    font-family:  "Arial", sans-serif;
+    @include ul__li--hover-color( color, transition, $main-text-color );
+
+    &:hover {
+        color: $ul__li--hover;
+    } 
+
+}
+
+.font--secondary {
+    font-family: $font-family--secondary;
+    
+    @include ul__li--hover-color( color, transition, $main-text-color );
+    @include ul__li--hover-color( background-color, transition, $secondary-color );
+    &:hover {
+        color: $coding-color;
+        background-color: $main-text-color;
+
+    }
+}
+
+.ul__item {
+
+    &:hover .ul__text {
+        color: $ul__li--hover;
+    } 
+
+    &:hover .contact-items {
+        fill: $ul__li--hover;
+    } 
+}
+
+.skills__block,
+.nav__link {
+    align-self: center;
+    padding: 10px;
+
+}
+
+.skills__title {
+    width: 40%;
+    font-size: $contact-icons--height;
+}
+
+.skills__item {
+    width: 12px;
+    height: 12px;
+    background-color: $article__title;
+    border-radius: 50%;
+   
+
+}
+
+.skills__item--color-secondary {
+
+    background-color: $secondary-color;
+
+}
+
+.footer {
+    justify-content: center;
+}
+
+.nav__link {
+    align-self: flex-end;
+}
