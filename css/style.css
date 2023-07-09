@@ -1,0 +1,164 @@
+@charset "UTF-8";
+.ul__item,
+.ul__wrapper,
+.skills__block,
+.nav__block,
+.footer,
+.section {
+  display: flex;
+  gap: 10px;
+}
+
+body,
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  margin: 0;
+  color: #272121;
+  font-family: "Arial", sans-serif;
+}
+
+a {
+  color: #272121;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none; /* Прибираємо маркери */
+}
+
+ul {
+  margin-left: 0; /* Відступ зліва в браузері IE і Opera */
+  padding-left: 0; /* Відступ зліва в браузері Firefox, Safari, Chrome */
+}
+
+.container-sv {
+  padding: 8px;
+  padding-top: 0px;
+  /*гид не управляет самим контейнером, а только к тем элементам , котоыре внутри. т.е паддинги для краев мы задаем самостоятельно. Также , чтобы прижать футер к подвалу пишем минимальную  высоту*/
+  display: grid;
+  row-gap: 40px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 300px auto 100px;
+  grid-template-areas: "header header" "aside main" "footer footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+.header {
+  display: flex;
+}
+
+.section__description {
+  font-size: 1.5rem;
+}
+
+.article__title {
+  font-weight: 600;
+  border-bottom: 1px solid #e98644;
+  align-self: center;
+}
+
+.section__title {
+  font-weight: 600;
+}
+
+.section__subtitle {
+  font-size: 1.2rem;
+}
+
+.contact-items {
+  height: 1.5rem;
+  align-self: center;
+  fill: #272121;
+  transition: fill 0.4s linear;
+}
+
+.img {
+  max-width: 50%;
+}
+
+.logo {
+  max-width: 7%;
+}
+
+.ul__wrapper,
+.section {
+  padding-top: 20px;
+  flex-direction: column;
+}
+
+.ul__text {
+  font-size: 1.5rem;
+  font-family: "Arial", sans-serif;
+  color: #272121;
+  transition: color 0.4s linear;
+}
+.ul__text:hover {
+  color: #da5903;
+}
+
+.font--secondary {
+  font-family: "Cascadia Code", sans-serif;
+  color: #272121;
+  transition: color 0.4s linear;
+  background-color: #c4c4c4;
+  transition: background-color 0.4s linear;
+}
+.font--secondary:hover {
+  color: #fdc254;
+  background-color: #272121;
+}
+
+.ul__item:hover .ul__text {
+  color: #da5903;
+}
+.ul__item:hover .contact-items {
+  fill: #da5903;
+}
+
+.skills__block,
+.nav__link {
+  align-self: center;
+  padding: 10px;
+}
+
+.skills__title {
+  width: 40%;
+  font-size: 1.5rem;
+}
+
+.skills__item {
+  width: 12px;
+  height: 12px;
+  background-color: #e98644;
+  border-radius: 50%;
+}
+
+.skills__item--color-secondary {
+  background-color: #c4c4c4;
+}
+
+.footer {
+  justify-content: center;
+}
+
+.nav__link {
+  align-self: flex-end;
+}/*# sourceMappingURL=style.css.map */
