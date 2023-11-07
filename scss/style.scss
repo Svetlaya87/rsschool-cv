@@ -7,7 +7,7 @@ $contact-icons--height: 1.5rem;
 $ul__li--hover: #da5903;
 $article__title: #e98644;
 $font-family--secondary: 'Cascadia Code', sans-serif;
-                                                
+
 
 %list--flex {
     display: flex;
@@ -47,16 +47,16 @@ ul {
 .container-sv{
     padding: 8px;
     padding-top: 0px;
-    
+
     /*гид не управляет самим контейнером, а только к тем элементам , котоыре внутри. т.е паддинги для краев мы задаем самостоятельно. Также , чтобы прижать футер к подвалу пишем минимальную  высоту*/
     display: grid;
     row-gap: 40px;
     column-gap: 40px;
-    
+
     grid-template-columns:  300px 1fr;
     grid-template-rows: 300px auto 100px;
-    
-   
+
+
     grid-template-areas: "header header"
                          "aside main"
                          "footer footer"
@@ -79,7 +79,7 @@ footer {
 }
 
 .header {
-    
+
     display: flex;
 }
 
@@ -112,11 +112,11 @@ footer {
 
 .img {
     max-width: 50%;
-} 
+}
 
 .logo {
     width: 100px;
-    
+
 
 }
 
@@ -145,13 +145,13 @@ footer {
 
     &:hover {
         color: $ul__li--hover;
-    } 
+    }
 
 }
 
 .font--secondary {
     font-family: $font-family--secondary;
-    
+
     @include ul__li--hover-color( color, transition, $main-text-color );
     @include ul__li--hover-color( background-color, transition, $secondary-color );
     &:hover {
@@ -165,11 +165,11 @@ footer {
 
     &:hover .ul__text {
         color: $ul__li--hover;
-    } 
+    }
 
     &:hover .contact-items {
         fill: $ul__li--hover;
-    } 
+    }
 }
 
 .skills__block,
@@ -189,7 +189,7 @@ footer {
     height: 12px;
     background-color: $article__title;
     border-radius: 50%;
-   
+
 
 }
 
