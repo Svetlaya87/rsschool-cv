@@ -118,21 +118,9 @@
                 <p class="section__description">Write an algorithm that takes an array and moves all of the zeros to the end, preserving the order of the other elements.</p>
                 <pre class="font--secondary">
                     <code class="language-javascript section__description">
-        function moveZeros(arr) {
-            let arrNull=[], NotNull=[];
-            for (let i = 0; i &lt; arr.length; i++){
-                if (arr[i] === 0) {
-                    arrNull.push(0);
-                }else {
-                    NotNull.push(arr[i]);
-                }
-            }
-            return newArr2;
-        }
-                    </code>
+    function moveZeros(arr){ return [...arr.filter(e =>e !==0), ...arr.filter(e =>e ===0)]}&nbsp</code>
                 </pre>
             </div>
-
         </main>
 
         <aside class="aside">
